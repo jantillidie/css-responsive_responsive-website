@@ -263,21 +263,25 @@ width, etc. */
 /* --- */
 @media (min-width:1200px) {
 
-  *,
-  *::before,
-  *::after {
-    max-width: 1200px;
+  body {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .main-header {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    width: 1200px;
     margin: 0 auto;
   }
 
   .main-content {
     padding: 0 0 var(--gap) 0;
-  }
-
-  .--forest {
-    width: 100%;
-    height: 500px;
-    box-shadow: none;
+    flex-flow: wrap row;
+    justify-content: center;
   }
 
   .card-section {
@@ -285,23 +289,19 @@ width, etc. */
     justify-content: center;
   }
 
-  .--mountain,
-  .--river,
-  .--ocean,
-  .--desert {
+  .product-card,
+  .intro-text {
     width: 47%;
+  }
+
+  .product-card:first-child {
+    width: 100%;
+    height: 500px;
+    box-shadow: none;
   }
 
   .intro-text {
-    width: 47%;
     align-self: flex-start;
-  }
-
-  .contact-details,
-  .footer-nav,
-  .main-footer p,
-  a {
-    margin: 0;
   }
 }
 
