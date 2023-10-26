@@ -241,7 +241,7 @@ width, etc. */
 
 /* Media Query Tablet */
 /* --- */
-@media (min-width:767px) and (max-width:1199px) {
+@media (min-width: 767px) and (max-width: 1199px) {
   .card-section {
     flex-flow: wrap row;
     justify-content: center;
@@ -261,8 +261,7 @@ width, etc. */
 
 /* Media Query Desktop */
 /* --- */
-@media (min-width:1200px) {
-
+@media (min-width: 1200px) {
   body {
     width: 1200px;
     margin: 0 auto;
